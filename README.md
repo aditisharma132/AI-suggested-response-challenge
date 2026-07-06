@@ -40,4 +40,4 @@ Add Google Gemini API key to `.env`: `GEMINI_API_KEY=your_key_here`
 > - **API Rate Limits:** To survive Google Free Tier burst constraints, the evaluation script intentionally relies on strict 5-second sleep delays to prevent `429 Quota Exceeded` crashes.
 
 ## 3. Tools 
-DeepMind Antigravity was used to scaffold boilerplate logic, solve rate-limit sleep constraints, and generate the final HTML reporting UI.
+DeepMind Antigravity and Claude were used to scaffold boilerplate logic, solve rate-limit sleep constraints, and generate the final HTML reporting UI.
