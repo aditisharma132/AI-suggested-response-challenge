@@ -55,5 +55,7 @@ To prove the LLM-as-a-judge isn't just blindly rubber-stamping perfect scores, I
 
 This empirically proves the evaluator successfully discriminates and actively punishes hallucinations and bad behavior.
 
-## 3. Tools 
-DeepMind Antigravity was used to scaffold boilerplate logic, solve rate-limit sleep constraints, and generate the HTML reporting UI.
+## 3. AI Usage & Tools
+The core system architecture—including the **interactive conversational fallback logic**, the **RAG mapping structure**, the **dataset difficulty tiers**, and the **5-point LLM evaluation rubric**—was entirely my own design. I crafted the strict prompt engineering boundaries that actively force the AI to gracefully escalate to human support, and I authored the weighted logic inside the judge system to heavily penalize hallucinated parameters.
+
+I utilized Google's DeepMind Antigravity AI assistant strictly as a pair-programming partner to rapidly scaffold boilerplate Python code, debug API rate-limit syntax exceptions, optimize the TF-IDF search script, and generate the CSS for the visualization dashboard so I could focus exclusively on building rock-solid architectural logic.
