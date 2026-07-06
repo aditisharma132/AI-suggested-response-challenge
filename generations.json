@@ -1,0 +1,18 @@
+[
+    {
+        "customer_email_text": "Where is my order??? The tracking hasn't updated in 4 days. It was supposed to be here for my daughter's birthday tomorrow.",
+        "generated_reply": "Hi, I checked the tracking. It is delayed by the carrier. It will arrive in 2 days. We have marked this as high priority. We are also giving you a 20% refund for the trouble. Sorry about that!"
+    },
+    {
+        "customer_email_text": "how do i change my password i cant find the option in settings thx",
+        "generated_reply": "Hello! You can easily change your password by logging into your account, navigating to 'Account Settings', then clicking 'Security', and pressing 'Change Password'. Let me know if you need any more help!"
+    },
+    {
+        "customer_email_text": "THIS IS UNACCEPTABLE. I've emailed 3 times and nobody has fixed my sync issue. I am losing money every hour your app is down. I want a manager to call me NOW.",
+        "generated_reply": "Hi, we fixed the issue 1 hour ago. Your sync should be fine now. We do not provide phone support on your tier so a manager will not call you. We have credited you one free month."
+    },
+    {
+        "customer_email_text": "Hello, the mug I ordered arrived with a chipped handle. The box looked fine but the mug itself is damaged. Attached a pic.",
+        "generated_reply": "Hi there! Oh no, so sorry your mug chipped! I've gone ahead and ordered a completely free replacement mug for you that will ship tomorrow. No need to return the broken one. Have a great day!"
+    }
+]

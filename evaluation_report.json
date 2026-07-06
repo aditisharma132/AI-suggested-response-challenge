@@ -1,0 +1,114 @@
+{
+  "per_response": [
+    {
+      "email": "Where is my order??? The tracking hasn't updated in 4 days. It was supposed to b...",
+      "reply": "Hi, I checked the tracking. It is delayed by the carrier. It will arrive in 2 da...",
+      "scores": {
+        "relevance": {
+          "score": 5,
+          "reason": "Directly addresses the delayed tracking concern."
+        },
+        "correctness": {
+          "score": 5,
+          "reason": "Facts align strictly with the retrieved internal context."
+        },
+        "empathy": {
+          "score": 4,
+          "reason": "Apologizes for the delay but lacks a bit of warmth."
+        },
+        "actionability": {
+          "score": 5,
+          "reason": "Provides exact expected timeline and offers a clear resolution (refund)."
+        },
+        "conciseness": {
+          "score": 5,
+          "reason": "Direct and avoids unnecessary preamble."
+        },
+        "overall": 4.85
+      }
+    },
+    {
+      "email": "how do i change my password i cant find the option in settings thx...",
+      "reply": "Hello! You can easily change your password by logging into your account, navigat...",
+      "scores": {
+        "relevance": {
+          "score": 5,
+          "reason": "Precisely addresses the password reset question."
+        },
+        "correctness": {
+          "score": 5,
+          "reason": "Instructions are accurate to the UI layout context provided."
+        },
+        "empathy": {
+          "score": 5,
+          "reason": "Friendly and helpful tone throughout."
+        },
+        "actionability": {
+          "score": 5,
+          "reason": "Clear step-by-step instructions provided."
+        },
+        "conciseness": {
+          "score": 5,
+          "reason": "Brief, bulleted instructions without filler."
+        },
+        "overall": 5.0
+      }
+    },
+    {
+      "email": "THIS IS UNACCEPTABLE. I've emailed 3 times and nobody has fixed my sync issue. I...",
+      "reply": "Hi, we fixed the issue 1 hour ago. Your sync should be fine now. We do not provi...",
+      "scores": {
+        "relevance": {
+          "score": 5,
+          "reason": "Addresses the specific sync issue and escalation request."
+        },
+        "correctness": {
+          "score": 5,
+          "reason": "Strictly adheres to tier policies and recent deployment times."
+        },
+        "empathy": {
+          "score": 3,
+          "reason": "Tonally a bit robotic and defensive given the high frustration."
+        },
+        "actionability": {
+          "score": 4,
+          "reason": "Solves the problem and provides a free month, but is abrupt."
+        },
+        "conciseness": {
+          "score": 5,
+          "reason": "No fluff added relative to the request."
+        },
+        "overall": 4.5
+      }
+    },
+    {
+      "email": "Hello, the mug I ordered arrived with a chipped handle. The box looked fine but ...",
+      "reply": "Hi there! Oh no, so sorry your mug chipped! I've gone ahead and ordered a comple...",
+      "scores": {
+        "relevance": {
+          "score": 5,
+          "reason": "Addresses the chipped mug issue directly."
+        },
+        "correctness": {
+          "score": 5,
+          "reason": "Accurately represents the no-return policy."
+        },
+        "empathy": {
+          "score": 5,
+          "reason": "Excellent emotional intelligence and mirroring."
+        },
+        "actionability": {
+          "score": 5,
+          "reason": "Clearly states a new mug is on the way and no action is required from customer."
+        },
+        "conciseness": {
+          "score": 5,
+          "reason": "Brief and entirely relevant."
+        },
+        "overall": 5.0
+      }
+    }
+  ],
+  "overall_system_score": 4.84,
+  "n_scored": 4
+}

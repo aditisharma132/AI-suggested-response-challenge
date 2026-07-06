@@ -1,0 +1,82 @@
+[
+    {
+        "category": "refund_request",
+        "difficulty": "easy",
+        "customer_email_text": "Hi, I bought the Pro plan yesterday but realized I meant to buy the basic. Can I get a refund for the difference?",
+        "customer_sentiment": "neutral",
+        "context_notes": "Customer within 30-day refund window. Eligible for partial refund.",
+        "agent_reply": "Hi there,\n\nThanks for reaching out! Absolutely, since you are within our 30-day refund window, I have processed a partial refund for the difference between the Pro and Basic plans. You should see the funds returned to your original payment method in 3-5 business days. \n\nLet me know if you need anything else!\n\nBest,\nSupport Team"
+    },
+    {
+        "category": "shipping_delay",
+        "difficulty": "medium",
+        "customer_email_text": "Where is my order??? The tracking hasn't updated in 4 days. It was supposed to be here for my daughter's birthday tomorrow.",
+        "customer_sentiment": "negative",
+        "context_notes": "Tracking shows package delayed by carrier. Expected delivery in 2 days. Mark as priority.",
+        "agent_reply": "Hello,\n\nI am so sorry for the delay and completely understand your frustration, especially since this is for your daughter's birthday. I looked into your order and can see that the carrier's tracking has frozen, but our internal system shows it is currently at the local distribution center and expected to be delivered in 2 days.\n\nWhile I can't magically make it arrive by tomorrow, I have marked this as priority to prevent any further delays. As an apology, I am issuing a 20% refund on this order to your card.\n\nBest,\nSupport Team"
+    },
+    {
+        "category": "simple_faq",
+        "difficulty": "easy",
+        "customer_email_text": "how do i change my password i cant find the option in settings thx",
+        "customer_sentiment": "neutral",
+        "context_notes": "Standard password reset flow: Account Settings > Security > Change Password.",
+        "agent_reply": "Hi there,\n\nThanks for asking! Changing your password is easy. Just log into your account, click on 'Account Settings', then navigate to the 'Security' tab. From there, you will see a 'Change Password' button.\n\nIf you have any trouble finding it, let me know!\n\nBest,\nSupport Team"
+    },
+    {
+        "category": "angry_escalation",
+        "difficulty": "hard",
+        "customer_email_text": "THIS IS UNACCEPTABLE. I've emailed 3 times and nobody has fixed my sync issue. I am losing money every hour your app is down. I want a manager to call me NOW.",
+        "customer_sentiment": "angry",
+        "context_notes": "Known outage affected this user. Engineering deployed fix 1 hour ago. Phone support is not offered on their tier.",
+        "agent_reply": "Hello,\n\nI want to sincerely apologize for the unacceptable experience you have had. I completely understand how incredibly frustrating the sync issues have been, and how a disruption like this impacts your business.\n\nOur engineering team deployed a permanent fix for this sync outage exactly one hour ago, and your account should now be syncing perfectly. While we do not offer outbound phone support on your current plan tier, I am personally taking ownership of your ticket. I have credited a free month of service to your account for the downtime.\n\nPlease reply directly to this email to let me know if your sync has fully returned to normal.\n\nBest,\nSupport Manager"
+    },
+    {
+        "category": "product_defect",
+        "difficulty": "medium",
+        "customer_email_text": "Hello, the mug I ordered arrived with a chipped handle. The box looked fine but the mug itself is damaged. Attached a pic.",
+        "customer_sentiment": "frustrated",
+        "context_notes": "Photo shows actual damage. Policy is replacement without needing return.",
+        "agent_reply": "Hi there,\n\nOh no, I'm so sorry that your mug arrived chipped! Thank you for attaching the photo—that really helps speed things up on our end.\n\nYou do not need to worry about returning the broken mug to us. I have already gone ahead and ordered a completely free replacement mug for you. It will ship out tomorrow via expedited shipping, and I will email you the tracking link as soon as it goes out.\n\nBest,\nSupport Team"
+    },
+    {
+        "category": "billing_dispute",
+        "difficulty": "hard",
+        "customer_email_text": "I see two charges of $49.99 on my statement for this month. I only have one account. Did you double charge me?",
+        "customer_sentiment": "confused",
+        "context_notes": "Checked Stripe: User actually has two active subscriptions under two different emails (work and personal). No double charge on same account.",
+        "agent_reply": "Hi there,\n\nI can certainly understand why seeing two entirely separate charges would cause concern! I looked closely at our billing system to find out what happened.\n\nIt turns out you are not being double-charged on a single account. However, you currently have two active subscriptions under two different email addresses: one under your personal email, and one under your work email. \n\nIf you no longer need the second account, let me know which email address you'd like to cancel, and I can process a refund for that extra charge and close the duplicate account right away.\n\nBest,\nSupport Team"
+    },
+    {
+        "category": "account_access",
+        "difficulty": "medium",
+        "customer_email_text": "I lost my phone and didn't save the backup codes. How can I get back into my account? I really need my files.",
+        "customer_sentiment": "urgent",
+        "context_notes": "Requires identity verification. Send standard ID verification link.",
+        "agent_reply": "Hello,\n\nI absolutely understand how stressful it is to be locked out of your account without your phone and backup codes! You can rest assured that your files are safe, and we will get you back in.\n\nTo disable the 2-Factor Authentication without your phone, we just need to quickly verify your identity to protect your account. Please click the secure link below to upload a photo of your government-issued ID:\n\n[ID Verification Link]\n\nAs soon as you complete that, our security team will remove the 2FA immediately so you can log back in. Let me know if you hit any snags!\n\nBest,\nSupport Team"
+    },
+    {
+        "category": "simple_faq",
+        "difficulty": "easy",
+        "customer_email_text": "Do u guys support dark mode?",
+        "customer_sentiment": "neutral",
+        "context_notes": "Dark mode is available in the top right menu under Appearance.",
+        "agent_reply": "Hi there,\n\nYes, we definitely support dark mode! You can easily turn it on by clicking on your profile icon in the top right corner, selecting 'Appearance', and then toggling 'Dark Mode' to on.\n\nLet me know if you have any trouble finding it! \n\nBest,\nSupport Team"
+    },
+    {
+        "category": "shipping_delay",
+        "difficulty": "easy",
+        "customer_email_text": "I ordered 10 days ago, no shipping confirmation yet.",
+        "customer_sentiment": "confused",
+        "context_notes": "Items purchased were pre-orders. Shipping begins next week as stated on product page.",
+        "agent_reply": "Hi there,\n\nThanks for checking in! I completely understand wanting an update on an order placed 10 days ago. I took a look at your invoice and notice you purchased items that are currently on pre-order.\n\nAs noted on the original product page, the official shipping begins next week. You will receive an automated email with your tracking number the absolute second it leaves our warehouse. \n\nBest,\nSupport Team"
+    },
+    {
+        "category": "refund_request",
+        "difficulty": "hard",
+        "customer_email_text": "I want a refund for the last 6 months. I haven't used it at all and just noticed the charges.",
+        "customer_sentiment": "angry",
+        "context_notes": "Max refund policy is 1 month for unused time. Cannot refund 6 months.",
+        "agent_reply": "Hello,\n\nI understand how frustrating it is to realize you've been billed for a service you haven't been actively using. \n\nI pulled up your account usage logs, and I can confirm there has been no activity on your end. While our standard terms of service require cancellations to be made prior to renewal, I want to help as much as possible. Per our billing policy limits, I am able to refund you for the most recent month of unused service. I have also officially cancelled your auto-renew so you won't be billed again moving forward.\n\nI know this isn't the full 6 months you requested, but I hope this helps resolve the situation. \n\nBest,\nSupport Team"
+    }
+]

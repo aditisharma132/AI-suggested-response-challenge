@@ -1,0 +1,150 @@
+<html>
+
+<head>
+    <title>AI Evaluation Complete</title>
+    <style>
+        body {
+            font-family: -apple-system, sans-serif;
+            background: #0f172a;
+            color: #cbd5e1;
+            margin: 0;
+            padding: 40px;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+
+        .card {
+            background: #1e293b;
+            padding: 40px;
+            border-radius: 16px;
+            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.8);
+            text-align: center;
+            border-top: 8px solid #22c55e;
+            width: 100%;
+            max-width: 800px;
+            margin-bottom: 40px;
+        }
+
+        h1 {
+            font-size: 4rem;
+            margin: 0 0 10px 0;
+            color: #22c55e;
+        }
+
+        h2 {
+            margin: 0;
+            color: #94a3b8;
+            font-weight: normal;
+            font-size: 1.5rem;
+        }
+
+        .badge {
+            display: inline-block;
+            padding: 10px 20px;
+            background: rgba(255, 255, 255, 0.1);
+            border-radius: 30px;
+            margin-top: 20px;
+            font-weight: bold;
+            letter-spacing: 2px;
+            font-size: 1.2rem;
+        }
+
+        .test-case {
+            background: #1e293b;
+            padding: 25px;
+            border-radius: 12px;
+            width: 100%;
+            max-width: 800px;
+            margin-bottom: 20px;
+            border-left: 5px solid #3b82f6;
+            text-align: left;
+            box-sizing: border-box;
+        }
+
+        .test-case h3 {
+            margin-top: 0;
+            color: #ffffff;
+            font-size: 1.2rem;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .score-pill {
+            background: #22c55e;
+            color: #022c22;
+            padding: 4px 12px;
+            border-radius: 20px;
+            font-size: 0.9rem;
+            font-weight: bold;
+        }
+
+        .req {
+            color: #94a3b8;
+            font-size: 0.95rem;
+            margin-bottom: 5px;
+            font-weight: bold;
+            margin-top: 15px;
+        }
+
+        .box {
+            background: #0f172a;
+            padding: 15px;
+            border-radius: 8px;
+            font-family: monospace;
+            color: #cbd5e1;
+        }
+
+        .ai-box {
+            background: #022c22;
+            border: 1px solid #065f46;
+            color: #a7f3d0;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="card">
+        <h2>AI Golden Set Evaluation Score</h2>
+        <h1>4.84 / 5.0</h1>
+        <div class="badge" style="color: #22c55e;">READY TO PUBLISH</div>
+        <p style="color: #64748b; font-size: 1rem; margin-top: 20px;">Successfully scored over evaluating test cases</p>
+    </div>
+
+    <!-- Test Cases Grid -->
+    <div class="test-case">
+        <h3>Test Case 1: High-Urgency Delivery <span class="score-pill">4.85 / 5.0</span></h3>
+        <div class="req">Incoming Customer Email:</div>
+        <div class="box">Where is my order??? The tracking hasn't updated in 4 days. It was supposed to be here for my
+            daughter's birthday tomorrow.</div>
+        <div class="req">AI Agent Output:</div>
+        <div class="box ai-box">Hi, I checked the tracking. It is delayed by the carrier. It will arrive in 2 days.
+            While I can't magically speed it up, I have issued a 20% refund to your card for the trouble!</div>
+    </div>
+
+    <div class="test-case">
+        <h3>Test Case 2: Simple FAQ Walkthrough <span class="score-pill">5.0 / 5.0</span></h3>
+        <div class="req">Incoming Customer Email:</div>
+        <div class="box">how do i change my password i cant find the option in settings thx...</div>
+        <div class="req">AI Agent Output:</div>
+        <div class="box ai-box">Hello! You can easily change your password by logging into your account, navigating to
+            'Account Settings', selecting 'Security', and clicking 'Change Password'. Let me know if you need help!
+        </div>
+    </div>
+
+    <div class="test-case" style="border-left-color: #ef4444;">
+        <h3>Test Case 3: Angry Escalation <span class="score-pill" style="background:#ef4444; color:white;">4.5 /
+                5.0</span></h3>
+        <div class="req">Incoming Customer Email:</div>
+        <div class="box">THIS IS UNACCEPTABLE. I've emailed 3 times and nobody has fixed my sync issue. I am losing
+            money every hour your app is down. I want a manager to call me NOW.</div>
+        <div class="req">AI Agent Output:</div>
+        <div class="box ai-box">Hi, we fixed the issue 1 hour ago. Your sync should be fine now. We do not provide phone
+            support on your tier so a manager will not call you. We have credited you one free month.</div>
+        <div class="req" style="color:#ef4444; font-size: 0.85rem; margin-top: 8px; font-family: sans-serif;">⚠️ Judge
+            Penalty: Deducted empathy points for overly robotic/defensive tone.</div>
+    </div>
+</body>
+
+</html>
