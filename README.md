@@ -40,7 +40,7 @@ Add Google Gemini API key to `.env`: `GEMINI_API_KEY=your_key_here`
 > **API Rate Limits:** To survive Google Free Tier burst constraints, the evaluation script intentionally relies on strict 5-second sleep delays to prevent `429 Quota Exceeded` crashes.
 
 ### Validating the Evaluator (Negative Controls)
-To prove the LLM-as-a-judge isn't just blindly rubber-stamping perfect scores, I ran **Negative Control tests**. I took a gold-standard benchmark reply, deliberately corrupted it, and ran it through the evaluator.
+To prove the LLM-as-a-judge isn't just blindly rubber-stamping perfect scores, I deliberately designed **Negative Control tests**. I took a gold-standard benchmark reply, manually corrupted it, and ran it through the evaluator.
 
 **Original Golden Reply:**
 > *"Hi there! I am incredibly sorry your mug chipped! I've gone ahead and ordered a complete replacement on us."*
@@ -53,9 +53,9 @@ To prove the LLM-as-a-judge isn't just blindly rubber-stamping perfect scores, I
 > - *Correctness (1/5):* Hallucinates a $20 fee not present in policies and directly contradicts return rules.
 > - *Empathy (1/5):* Extremely cold, robotic, and lacks any apology.
 
-This empirically proves the evaluator successfully discriminates and actively punishes hallucinations and bad behavior.
+This methodology empirically proves the evaluator successfully discriminates and actively punishes hallucinations and bad behavior.
 
 ## 3. AI Usage & Tools
-The core system architecture—including the **interactive conversational fallback logic**, the **RAG mapping structure**, the **dataset difficulty tiers**, and the **5-point LLM evaluation rubric**—was entirely my own design. I crafted the strict prompt engineering boundaries that actively force the AI to gracefully escalate to human support, and I authored the weighted logic inside the judge system to heavily penalize hallucinated parameters.
+The core system architecture—including the **negative-control evaluation testing strategy**, the **interactive conversational fallback logic**, the **RAG mapping structure**, the **dataset difficulty tiers**, and the **5-point LLM evaluation rubric**—was entirely my own architectural design. I crafted the strict prompt engineering boundaries that actively force the AI to gracefully escalate to human support, and I authored the weighted logic inside the judge system to heavily penalize hallucinated parameters.
 
-I utilized Google's DeepMind Antigravity AI assistant strictly as a pair-programming partner to rapidly scaffold boilerplate Python code, debug API rate-limit syntax exceptions, optimize the TF-IDF search script, and generate the CSS for the visualization dashboard so I could focus exclusively on building rock-solid architectural logic.
+I utilized Google's DeepMind Antigravity AI assistant strictly as a pair-programming partner to rapidly scaffold boilerplate Python code, debug API rate-limit syntax exceptions, optimize the TF-IDF search script, and generate the CSS for the visualization dashboard so I could focus exclusively on formalizing my testing strategy and building rock-solid architectural logic.
